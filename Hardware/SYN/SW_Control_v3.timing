@@ -1,0 +1,111 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : SW_Control_v3
+Version: N-2017.09-SP2
+Date   : Thu Jun 27 02:16:43 2019
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: typical
+Wire Load Model Mode: top
+
+  Startpoint: m4/genblk1[12].PE_instance/V_out/out_Q_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m4/genblk1[12].PE_instance/V_out/out_Q_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SW_Control_v3      G5K                   fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  m4/genblk1[12].PE_instance/V_out/out_Q_reg[2]/CK (DFFTRX2)
+                                                          0.00 #     0.00 r
+  m4/genblk1[12].PE_instance/V_out/out_Q_reg[2]/Q (DFFTRX2)
+                                                          0.33       0.33 f
+  m4/genblk1[12].PE_instance/V_out/out_Q[2] (DFF_16_206)
+                                                          0.00       0.33 f
+  m4/genblk1[12].PE_instance/a1/in_value[2] (SUB_ALPHA_51)
+                                                          0.00       0.33 f
+  m4/genblk1[12].PE_instance/a1/U26/Y (CLKINVX4)          0.05       0.37 r
+  m4/genblk1[12].PE_instance/a1/U55/Y (AND2X2)            0.10       0.48 r
+  m4/genblk1[12].PE_instance/a1/U3/Y (AND2X6)             0.08       0.56 r
+  m4/genblk1[12].PE_instance/a1/U8/Y (AND2X8)             0.07       0.64 r
+  m4/genblk1[12].PE_instance/a1/U18/Y (AND2X8)            0.07       0.70 r
+  m4/genblk1[12].PE_instance/a1/U57/Y (AND2X2)            0.11       0.82 r
+  m4/genblk1[12].PE_instance/a1/U19/Y (CLKAND2X8)         0.11       0.93 r
+  m4/genblk1[12].PE_instance/a1/U6/Y (CLKAND2X8)          0.10       1.02 r
+  m4/genblk1[12].PE_instance/a1/U7/Y (CLKAND2X8)          0.10       1.12 r
+  m4/genblk1[12].PE_instance/a1/U17/Y (AND2X6)            0.08       1.20 r
+  m4/genblk1[12].PE_instance/a1/U10/Y (CLKAND2X8)         0.10       1.29 r
+  m4/genblk1[12].PE_instance/a1/U16/Y (AND2X2)            0.11       1.40 r
+  m4/genblk1[12].PE_instance/a1/U47/Y (AOI2BB1X1)         0.36       1.77 r
+  m4/genblk1[12].PE_instance/a1/out_value[12] (SUB_ALPHA_51)
+                                                          0.00       1.77 r
+  m4/genblk1[12].PE_instance/max3/in_value2[12] (MAX_258)
+                                                          0.00       1.77 r
+  m4/genblk1[12].PE_instance/max3/U31/Y (INVX1)           0.12       1.89 f
+  m4/genblk1[12].PE_instance/max3/U43/Y (AO22XL)          0.27       2.16 f
+  m4/genblk1[12].PE_instance/max3/U14/Y (AOI32X2)         0.16       2.32 r
+  m4/genblk1[12].PE_instance/max3/U15/Y (NAND3X4)         0.09       2.40 f
+  m4/genblk1[12].PE_instance/max3/U18/Y (INVX12)          0.09       2.50 r
+  m4/genblk1[12].PE_instance/max3/U70/Y (CLKMX2X2)        0.17       2.67 r
+  m4/genblk1[12].PE_instance/max3/out_value[5] (MAX_258)
+                                                          0.00       2.67 r
+  m4/genblk1[12].PE_instance/max5/in_value1[5] (MAX_256)
+                                                          0.00       2.67 r
+  m4/genblk1[12].PE_instance/max5/U60/Y (CLKINVX1)        0.09       2.76 f
+  m4/genblk1[12].PE_instance/max5/U8/Y (AND2X2)           0.16       2.92 f
+  m4/genblk1[12].PE_instance/max5/U4/Y (OAI32X2)          0.14       3.06 r
+  m4/genblk1[12].PE_instance/max5/U31/Y (AOI22X1)         0.08       3.14 f
+  m4/genblk1[12].PE_instance/max5/U30/Y (NAND2BX1)        0.14       3.28 f
+  m4/genblk1[12].PE_instance/max5/U19/Y (OAI211X2)        0.06       3.35 r
+  m4/genblk1[12].PE_instance/max5/U21/Y (OAI211X2)        0.08       3.43 f
+  m4/genblk1[12].PE_instance/max5/U35/Y (AND3X8)          0.16       3.59 f
+  m4/genblk1[12].PE_instance/max5/U65/Y (CLKMX2X2)        0.16       3.75 r
+  m4/genblk1[12].PE_instance/max5/out_value[0] (MAX_256)
+                                                          0.00       3.75 r
+  m4/genblk1[12].PE_instance/max6/in_value2[0] (MAX_255)
+                                                          0.00       3.75 r
+  m4/genblk1[12].PE_instance/max6/U23/Y (INVX1)           0.04       3.79 f
+  m4/genblk1[12].PE_instance/max6/U3/Y (AO22X2)           0.22       4.00 f
+  m4/genblk1[12].PE_instance/max6/U13/Y (AOI32X2)         0.14       4.14 r
+  m4/genblk1[12].PE_instance/max6/U12/Y (NOR3X2)          0.06       4.21 f
+  m4/genblk1[12].PE_instance/max6/U11/Y (OAI211X2)        0.07       4.28 r
+  m4/genblk1[12].PE_instance/max6/U15/Y (OAI211X2)        0.08       4.36 f
+  m4/genblk1[12].PE_instance/max6/U14/Y (OAI211X2)        0.07       4.43 r
+  m4/genblk1[12].PE_instance/max6/U27/Y (AND3X8)          0.19       4.62 r
+  m4/genblk1[12].PE_instance/max6/U16/Y (MX2X1)           0.19       4.81 r
+  m4/genblk1[12].PE_instance/max6/out_value[2] (MAX_255)
+                                                          0.00       4.81 r
+  m4/genblk1[12].PE_instance/V_out/in_D[2] (DFF_16_206)
+                                                          0.00       4.81 r
+  m4/genblk1[12].PE_instance/V_out/out_Q_reg[2]/D (DFFTRX2)
+                                                          0.00       4.81 r
+  data arrival time                                                  4.81
+
+  clock clk (rise edge)                                   5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.10       4.90
+  m4/genblk1[12].PE_instance/V_out/out_Q_reg[2]/CK (DFFTRX2)
+                                                          0.00       4.90 r
+  library setup time                                     -0.09       4.81
+  data required time                                                 4.81
+  --------------------------------------------------------------------------
+  data required time                                                 4.81
+  data arrival time                                                 -4.81
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
